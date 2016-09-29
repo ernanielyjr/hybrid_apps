@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h1>HTML Hybrid Apps</h1>
+					<p><img src="img/home.png" style="background: none;border: none;box-shadow: none;height: 350px;" /></p>
+					<p>
+						<small>Por <a href="#">Ernani Ely Jr.</a> / <a href="http://softdesign.com.br/hakimel">softdesign.com.br</a></small>
+					</p>
+				</section>
+
+                <section>
+                    <section>
+                        <h2>O que são Apps Híbridos?</h2>
+                        <p class="fragment"><img src="img/mp_lula.png" style="background: none;border: none;box-shadow: none;height: 500px;" /></p>
+                    </section>
+
+                    <section>
+                        <h2>Sério, o que são Apps Híbridos?</h2>
+                        <p>
+                            Uma aplicação híbrida é um aplicativo <strong>nativo</strong> construído com habilidades de desenvolvimento web:
+                            HTML5, CSS, JavaScript, que são empacotados no <em>build</em> dentro de um app nativo. O aplicativo nativo contém
+                            um navegador (WebView) que está ligado as arquivos HTML. Usando Cordova, Ionic, PhoneGap, ou outras soluções
+                            semelhantes, é possível - e até mesmo muito fácil - empacotar este código HTML com código nativo, e isso
+                            possibilita submeter o APP às lojas.
+                        </p>
+                    </section>
+                </section>
+
+				<section>
+					<h2>Opções de Mercado</h2>
+                    <p>
+                        <span class="fragment"><img src="img/ionic.png" style="background: #FFF;height: 160px;" /></span>
+                        &nbsp;&nbsp;
+                        <span class="fragment"><img src="img/phonegap.png" style="background: #FFF;height: 160px;" /></span>
+                        &nbsp;&nbsp;
+                        <span class="fragment"><img src="img/cordova.png" style="background: #FFF;height: 160px;" /></span>
+                        &nbsp;&nbsp;
+                        <span class="fragment"><img src="img/crosswalk.png" style="background: #FFF;height: 160px;" /></span>
+                        &nbsp;&nbsp;
+                        <span class="fragment"><img src="img/framework7.png" style="background: #FFF;height: 160px;" /></span>
+                    </p>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Cases</h2>
+                    </section>
+                    <section>
+                        <h3>AAMP</h3>
+                        <p>
+                            <span><img src="img/aamp0.webp" style="background: #FFF;height: 450px;" /></span>
+                            &nbsp;&nbsp;
+                            <span><img src="img/aamp1.webp" style="background: #FFF;height: 450px;" /></span>
+                            &nbsp;&nbsp;
+                            <span><img src="img/aamp2.webp" style="background: #FFF;height: 450px;" /></span>
+                        </p>
+                    </section>
+                    <section>
+                        <h3>APPT</h3>
+                        <p>
+                            <span><img src="img/appt0.webp" style="background: #FFF;height: 450px;" /></span>
+                            &nbsp;&nbsp;
+                            <span><img src="img/appt1.webp" style="background: #FFF;height: 450px;" /></span>
+                            &nbsp;&nbsp;
+                            <span><img src="img/appt2.webp" style="background: #FFF;height: 450px;" /></span>
+                        </p>
+                    </section>
+                    <section>
+                        <h3>ONNI</h3>
+                        <h1>404 (:</h1>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>IONIC</h2>
+                    </section>
+                    <section>
+                        <h3>Requisitos</h3>
+                        <p>NodeJS</p>
+                        <p>Android SDK / XCode</p>
+                        <p>Bower <small style="vertical-align: middle;">(recomendado)</small></p>
+                    </section>
+                    <section>
+                        <h3>Começando</h3>
+                        <pre><code data-trim>$ npm install -g cordova ionic</code></pre>
+                        <pre class="fragment"><code data-trim>$ ionic start appName tabs</code></pre>
+                        <pre class="fragment"><code data-trim>$ cd appName/</code></pre>
+                        <pre class="fragment"><code data-trim style="font-size: 14px; line-height: 20px;">hooks
+scss
+   -- ionic.app.scss
+www
+   -- css
+   -- img
+   -- js
+      ----> app.js
+      ----> controllers.js
+      ----> services.js
+   -- lib
+   -- templates
+      ----> friend-detail.html
+      ----> tab-account.html
+      ----> tab-dash.html
+      ----> tab-friends.html
+      ----> tabs.html
+   -- index.html</code></pre>
+                    </section>
+                    <section>
+                        <p><img src="img/tabs.png" style="background: #FFF;height: 600px;" /></p>
+                    </section>
+                    <section>
+                        <h3>Plataformas</h3>
+                        <pre><code data-trim>$ ionic platform add browser</code></pre>
+                        <pre><code data-trim>$ ionic platform add android</code></pre>
+                        <pre><code data-trim>$ ionic platform add ios</code></pre>
+                    </section>
+                    <section>
+                        <h3>Plugins</h3>
+                        <pre><code data-trim>$ cordova plugin add cordova-plugin-inappbrowser --save</code></pre>
+                    </section>
+                    <section>
+                        <h3>Libs</h3>
+                        <pre><code data-trim>$ bower install ngCordova --save</code></pre>
+                    </section>
+                    <section>
+                        <h3>Build/Run</h3>
+                        <pre><code data-trim>$ ionic serve</code></pre>
+                        <pre><code data-trim>$ ionic build android</code></pre>
+                        <pre><code data-trim>$ ionic run android</code></pre>
+                    </section>
+				</section>
+
+                <section>
+                    <h2>Vantagens</h2>
+                    <p class="fragment">É WEB!</p>
+                    <p class="fragment">Debug no browser</p>
+                    <p class="fragment">1 dev, várias plataformas</p>
+                    <p class="fragment">Quase tudo funciona bem</p>
+                    <p class="fragment">Menor custo</p>
+                    <p class="fragment">É nativo, sim! <span class="fragment">SQN</span></p>
+                </section>
+
+                <section>
+                    <h2>Problemas</h2>
+                    <p class="fragment">Não é nativo!</p>
+                    <p class="fragment">Você desenvolver para Safari</p>
+                    <p class="fragment">Baixa performance</p>
+                    <p class="fragment">Alto consumo de bateria</p>
+                    <p class="fragment">Animações são travadas</p>
+                    <p class="fragment">Limitações da implementação dos Plugins</p>
+                </section>
+
+                <section>
+                    <h2>Conclusão</h2>
+                    <h3>Vale a pena?</h3>
+                    <p class="fragment">Você está criando um novo Facebook?</p>
+                    <p class="fragment">É um jogo?</p>
+                    <p class="fragment">Tem pouca grana?</p>
+                    <p class="fragment">Tem pressa?</p>
+                    <p class="fragment">Quer encontrar mão de obra facilmente?</p>
+                </section>
+
+				<section style="text-align: left;">
+                    <h1>Obrigado</h1>
+                    <p>HTML Hybrid Apps</p>
+                    <p>
+                        <small><a href="#">Ernani Ely Jr.</a> / <a href="http://softdesign.com.br/hakimel">softdesign.com.br</a></small>
+                    </p>
+					<h4>Fontes</h4>
+					<p>
+                        <small>
+                            - <a href="http://http://ionicframework.com/">Ionic Freamework</a><br />
+                            - <a href="https://cordova.apache.org/">Apache Cordova</a><br />
+    						- <a href="http://phonegap.com/">Adobe Phonegap</a>
+                        </small>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
